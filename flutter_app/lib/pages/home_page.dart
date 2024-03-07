@@ -33,8 +33,8 @@ class _HomePageState extends State<HomePage> {
     // Fetch initial battery level
     _getBatteryLevel();
 
-    // Timer to update battery level every 5 seconds
-    _batteryTimer = Timer.periodic(const Duration(seconds: 5), (timer) {
+    // Timer to update battery level every 3 seconds
+    _batteryTimer = Timer.periodic(const Duration(seconds: 3), (timer) {
       _getBatteryLevel();
     });
   }
